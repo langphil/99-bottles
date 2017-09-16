@@ -19,7 +19,23 @@ class BottlesTest < Minitest::Test
     assert_equal expected, Bottles.new.verse(3)
   end
 
-  def test_verse_two
+  def test_verse_7
+    expected = "7 bottles of beer on the wall, " +
+      "7 bottles of beer.\n" +
+      "Take one down and pass it around, " +
+      "1 six pack of beer on the wall.\n"
+    assert_equal expected, Bottles.new.verse(7)
+  end
+
+  def test_verse_6
+    expected = "1 six pack of beer on the wall, " +
+      "1 six pack of beer.\n" +
+      "Take one down and pass it around, " +
+      "5 bottle of beer on the wall.\n"
+    assert_equal expected, Bottles.new.verse(6)
+  end
+
+  def test_verse_2
     expected = "2 bottles of beer on the wall, " +
       "2 bottles of beer.\n" +
       "Take one down and pass it around, " +
@@ -42,7 +58,6 @@ class BottlesTest < Minitest::Test
       "99 bottles of beer on the wall.\n"
     assert_equal expected, Bottles.new.verse(0)
   end
-
 
   def test_a_couple_verses
     expected = "99 bottles of beer on the wall, " +
@@ -354,9 +369,9 @@ Take one down and pass it around, 8 bottles of beer on the wall.
 Take one down and pass it around, 7 bottles of beer on the wall.
 
 7 bottles of beer on the wall, 7 bottles of beer.
-Take one down and pass it around, 6 bottles of beer on the wall.
+Take one down and pass it around, 1 six pack of beer on the wall.
 
-6 bottles of beer on the wall, 6 bottles of beer.
+1 six pack of beer on the wall, 1 six pack of beer.
 Take one down and pass it around, 5 bottles of beer on the wall.
 
 5 bottles of beer on the wall, 5 bottles of beer.
