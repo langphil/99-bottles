@@ -31,7 +31,7 @@ class BottlesTest < Minitest::Test
     expected = "1 six pack of beer on the wall, " +
       "1 six pack of beer.\n" +
       "Take one down and pass it around, " +
-      "5 bottle of beer on the wall.\n"
+      "5 bottles of beer on the wall.\n"
     assert_equal expected, Bottles.new.verse(6)
   end
 
