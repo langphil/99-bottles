@@ -1,3 +1,6 @@
+class BottleNumber
+end
+
 class Bottles
 
   def song
